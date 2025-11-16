@@ -10,7 +10,7 @@ Brazil_Income_Top1_Graph <- Brazil_PreTaxIncome_Top1Percent %>%
   scale_y_continuous(limits = c(0.15, 0.3)) +
   labs(title = "Trend of Pre-Tax Income Top 1% Share in Brazil",
        x = "Year",
-       y = "% of Total Income") +
+       y = "Share of Top 1% in Pre-Tax Income") +
   theme_minimal()
 
 Brazil_Income_Top1_Graph
@@ -23,7 +23,7 @@ Brazil_Income_Top10_Graph <- Brazil_PreTaxIncome_Top10Percent %>%
   scale_y_continuous(limits = c(0.5, 0.65)) +
   labs(title = "Trend of Pre-Tax Income Top 10% Share in Brazil",
        x = "Year",
-       y = "% of Total Income") +
+       y = "Share of Top 10% in Pre-Tax Income") +
   theme_minimal()
 
 Brazil_Income_Top10_Graph
@@ -36,7 +36,7 @@ Spain_Income_Top1_Graph <- Spain_PreTaxIncome_Top1Percent %>%
   scale_y_continuous(limits = c(0.05, 0.20)) +
   labs(title = "Trend of Pre-Tax Income Top 1% Share in Spain",
        x = "Year",
-       y = "% of Total Income") +
+       y = "Share of Top 1% in Pre-Tax Income") +
   theme_minimal()
 
 Spain_Income_Top1_Graph
@@ -49,7 +49,7 @@ Spain_Income_Top10_Graph <- Spain_PreTaxIncome_Top10Percent %>%
   scale_y_continuous(limits = c(0.3, 0.45)) +
   labs(title = "Trend of Pre-Tax Income Top 10% Share in Spain",
        x = "Year",
-       y = "% of Total Income") +
+       y = "Share of Top 10% in Pre-Tax Income") +
   theme_minimal()
 
 Spain_Income_Top10_Graph
@@ -62,7 +62,7 @@ BrazilandSpain_Income_Top1_Graph <- ggplot() +
   geom_point(data = Spain_PreTaxIncome_Top1Percent, aes(x = Year, y = `% of Total`, color = "Spain"), shape = 15, size = 2) +
   scale_y_continuous(limits = c(0.05, 0.3)) +
   labs(title = "Pre-Tax Income Top 1% Share: Brazil vs Spain",
-       x = "Year", y = "% of Total Income", color = "Country") +
+       x = "Year", y = "Share of Top 1% in Pre-Tax Income", color = "Country") +
   theme_minimal()
 
 BrazilandSpain_Income_Top1_Graph
@@ -75,7 +75,7 @@ BrazilandSpain_Income_Top10_Graph <- ggplot() +
   geom_point(data = Spain_PreTaxIncome_Top10Percent, aes(x = Year, y = `% of Total`, color = "Spain"), shape = 15, size = 2) +
   scale_y_continuous(limits = c(0.3, 0.65)) +
   labs(title = "Pre-Tax Income Top 10% Share: Brazil vs Spain",
-       x = "Year", y = "% of Total Income", color = "Country") +
+       x = "Year", y = "Share of Top 10% in Pre-Tax Income", color = "Country") +
   theme_minimal()
 
 BrazilandSpain_Income_Top10_Graph
