@@ -128,3 +128,9 @@ BrazilandSpain_Wealth_Top10_Graph <- ggplot() +
   theme_minimal()
 
 BrazilandSpain_Wealth_Top10_Graph
+
+
+
+
+
+
